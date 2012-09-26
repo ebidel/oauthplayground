@@ -170,7 +170,7 @@ For the Google APIs that support it, try the <a href="https://code.google.com/oa
         <br>
         <a href="#TB_inline?width=685&height=610&inlineId=postData" class="thickbox popupLink" title="Enter POST/PUT data" style="font-size:90%;">enter post data</a>
       </div>
-      <input type="text" id="feedUri" name="feedUri" value="<?php echo $feedUri; ?>" placeholder="Enter a feed URI" autofucus />
+      <input type="text" id="feedUri" name="feedUri" value="<?php echo strip_tags($feedUri); ?>" placeholder="Enter a feed URI" autofucus />
       <button type="submit" name="action" id="execute" value="execute" onclick="this.value='execute';" title="Query a feed">execute</button>
     </div>
 

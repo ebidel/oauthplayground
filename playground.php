@@ -34,12 +34,12 @@ if(isset($_GET['oauth_verifier']) && !isset($_SESSION['oauth_verifier'])) {
   $_SESSION['oauth_verifier'] = $_GET['oauth_verifier'];
 }
 
-$scope = @$_REQUEST['scope'];
-$http_method = @$_REQUEST['http_method'];
-$feedUri = @$_REQUEST['feedUri'];
+$scope = strip_tags(@$_REQUEST['scope']);
+$http_method = strip_tags(@$_REQUEST['http_method']);
+$feedUri = strip_tags(@$_REQUEST['feedUri']);
 $postData = @$_REQUEST['postData'];
 $privKey = isset($_REQUEST['privKey']) && trim($_REQUEST['privKey']) != '' ? $_REQUEST['privKey'] : NULL;
-$token_endpoint = @$_REQUEST['token_endpoint'];
+$token_endpoint = strip_tags(@$_REQUEST['token_endpoint']);
 
 $callback_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
 
