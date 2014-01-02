@@ -7,3 +7,5 @@ and a demo lived at googlecodesamples.com. The source now lives here on Github a
 If you're interested in OAuth 2.0, visit the [OAuth 2.0 Playground](https://code.google.com/oauthplayground/).
 
 <img src="http://farm4.staticflickr.com/3127/2871728462_05cac4dc2b.jpg">
+
+[![Analytics](https://ga-beacon.appspot.com/UA-46812528-1/ebidel/oauthplayground/README)](https://github.com/igrigorik/ga-beacon)
